@@ -78,10 +78,9 @@ std::string TransportCatalogue::GetStopInfo(std::string_view stop_name) const {
         out << "no buses"s;
         return out.str(); 
     }
-    out << "buses "s;
+    out << "buses"s;
     for (const Bus* bus : stop_to_buses_.at(stop_ptr)) {
-        out << bus->bus_name_ << " "s;
+        out << " "s<< bus->bus_name_;
     }
     return out.str();
 }
-
