@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/imgconv.dir/main.cpp.o -o imgconv   -L/home/kirozoki/jpeg-9f/libjpeg/lib/Debug  -Wl,-rpath,/home/kirozoki/jpeg-9f/libjpeg/lib/Debug ImgLibBuildDir/libImgLib.a -ljpeg 
