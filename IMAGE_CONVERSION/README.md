@@ -10,8 +10,8 @@
 ### Работа программы
 
 Запуск сборки происходит в терминале Linux из папки build. Библиотека JPEG была загружена с <https://www.ijg.org/> 
-cmake ../ImgConverter -DCMAKE_BUILD_TYPE=Debug -DLIBJPEG_DIR=<путь к пакету libjpeg>
-cmake --build . 
+* cmake ../ImgConverter -DCMAKE_BUILD_TYPE=Debug -DLIBJPEG_DIR=<путь к пакету libjpeg>
+* cmake --build . 
 
 ### Дальнейшая проработка
 
