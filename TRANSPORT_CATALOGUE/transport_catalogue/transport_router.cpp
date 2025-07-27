@@ -25,7 +25,7 @@ graph::Edge<double> TransportRouter::GetEdge(graph::EdgeId edge_id) const {
 }
 
 void TransportRouter::BuildGraph() {
-    std::map<std::string_view, std::vector<const Stop*>> all_buses = catalogue_.GetAllBuses();
+    std::map<std::string_view, std::vector<const Bus*>> all_buses = catalogue_.GetAllBuses();
     std::map<std::string_view, const Stop*> all_stops = catalogue_.GetAllStops();
     graph::DirectedWeightedGraph<double> graph(all_stops.size() * 3); 
     AddStopsToGraph(graph, all_stops);
